@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.example.theweather.R
+import com.example.theweather.databinding.ActivityMainBinding
+import com.example.theweather.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
 
@@ -17,13 +19,21 @@ class MainFragment : Fragment() {
     }
 
     private lateinit var viewModel: MainViewModel
+//    private var _binding: ActivityMainBinding? = null
+//    private val binding get() = _binding!!
+    lateinit var binding : FragmentMainBinding
+
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        binding = FragmentMainBinding.inflate(inflater)
+        return binding.root
     }
+
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
