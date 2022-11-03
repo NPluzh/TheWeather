@@ -8,9 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import com.example.theweather.AppState
 import com.example.theweather.R
 import com.example.theweather.databinding.ActivityMainBinding
 import com.example.theweather.databinding.FragmentMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainFragment : Fragment() {
 
@@ -38,14 +40,34 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        val observer = Observer<Any> { renderData(it) }
-        viewModel.getData().observe(viewLifecycleOwner, observer)// на LiveData вызываем метод .observe(интерфейс для компонентов с жизненным циклом, наблюдатель который вызывает определенный метод)
+        var it = AppState.Success(weatherData = Any())
+        viewModel.getLiveData().observe(viewLifecycleOwner, Observer { renderData(it as AppState)
+        })
+        viewModel.getWeather()
     }
 
-    private fun renderData(data: Any) {
-        Toast.makeText(context, "data", Toast.LENGTH_LONG).show()
+
+    private fun renderData(appState: AppState)  {
+        when (appState) {
+            is AppState.Success -> {
+                val weatherData = appState.weatherData
+                binding.loadingLayout.visibility = View.GONE
+                Snackbar.make(binding.mainView, "Success", Snackbar.LENGTH_LONG).show()
+            }
+            is AppState.Loading -> {
+                binding.loadingLayout.visibility = View.VISIBLE
+            }
+            is AppState.Error -> {
+                binding.loadingLayout.visibility = View.GONE
+                Snackbar
+                    .make(binding.mainView, "Error", Snackbar.LENGTH_INDEFINITE)
+                    .setAction("Reload") { viewModel.getWeather() }
+                    .show()
+            }
+        }
     }
 
 
 
-}
+
+            }
