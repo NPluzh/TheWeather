@@ -40,8 +40,8 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        var it = AppState.Success
-        viewModel.getLiveData().observe(viewLifecycleOwner, Observer { renderData(it)
+        var it = AppState.Success(weatherData = Any())
+        viewModel.getLiveData().observe(viewLifecycleOwner, Observer { renderData(it as AppState)
         })
         viewModel.getWeather()
     }
