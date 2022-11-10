@@ -1,4 +1,4 @@
-package com.gb.k_2135_2136_2.domain
+package com.example.theweather.domain
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

@@ -1,4 +1,4 @@
-import com.gb.k_2135_2136_2.domain.Weather
+import com.example.theweather.domain.Weather
 
 sealed class AppState {
     data class SuccessOne(val weatherData: Weather) : AppState()
