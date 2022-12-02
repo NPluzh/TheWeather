@@ -3,7 +3,6 @@ package com.gb.k_2135_2136_2.view.weatherlist
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.gb.k_2135_2136_2.model.*
-import com.gb.k_2135_2136_2.viewmodel.AppState
 import kotlin.random.Random
 
 class WeatherListViewModel(private val liveData: MutableLiveData<AppState> = MutableLiveData<AppState>()) :

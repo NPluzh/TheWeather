@@ -8,10 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gb.k_2135_2136_2.R
 import com.gb.k_2135_2136_2.databinding.FragmentWeatherListBinding
-import com.gb.k_2135_2136_2.domain.Weather
+import com.example.theweather.domain.Weather
 import com.gb.k_2135_2136_2.view.details.DetailsFragment
 import com.gb.k_2135_2136_2.view.details.OnItemClick
-import com.gb.k_2135_2136_2.viewmodel.AppState
 import kotlinx.android.synthetic.main.fragment_weather_list.*
 
 class WeatherListFragment : Fragment(), OnItemClick {

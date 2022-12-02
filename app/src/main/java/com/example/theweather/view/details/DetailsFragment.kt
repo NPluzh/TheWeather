@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.gb.k_2135_2136_2.databinding.FragmentDetailsBinding
-import com.gb.k_2135_2136_2.domain.Weather
+import com.example.theweather.domain.Weather
 
 class DetailsFragment : Fragment() {
 
@@ -35,7 +35,7 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //val weather=  arguments?.get(BUNDLE_WEATHER_EXTRA)
+
         arguments?.apply { }
         arguments?.also { }
         arguments?.run { }
@@ -83,20 +83,20 @@ class DetailsFragment : Fragment() {
     }
 
     companion object {
-        const val BUNDLE_WEATHER_EXTRA = "sgrrdfge"
+        const val BUNDLE_WEATHER_EXTRA = "bundle"
         fun newInstance(weather: Weather): DetailsFragment {
-            val fr = DetailsFragment()
+            val fragment = DetailsFragment()
 
-            fr.arguments = Bundle().apply {
+            fragment.arguments = Bundle().apply {
                 putParcelable(BUNDLE_WEATHER_EXTRA, weather)
                 putParcelable(BUNDLE_WEATHER_EXTRA, weather)
             }
-            fr.arguments = Bundle().also {
+            fragment.arguments = Bundle().also {
                 it.putParcelable(BUNDLE_WEATHER_EXTRA, weather)
                 it.putParcelable(BUNDLE_WEATHER_EXTRA, weather)
             }
 
-            return fr
+            return fragment
         }
     }
 

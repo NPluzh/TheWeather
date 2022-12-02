@@ -1,9 +1,9 @@
 package com.gb.k_2135_2136_2.model
 
 
-import com.gb.k_2135_2136_2.domain.Weather
-import com.gb.k_2135_2136_2.domain.getRussianCities
-import com.gb.k_2135_2136_2.domain.getWorldCities
+import com.example.theweather.domain.Weather
+import com.example.theweather.domain.getRussianCities
+import com.example.theweather.domain.getWorldCities
 
 class RepositoryLocalImpl : RepositoryMany,RepositoryOne {
     override fun getListWeather(location: Location): List<Weather> {
