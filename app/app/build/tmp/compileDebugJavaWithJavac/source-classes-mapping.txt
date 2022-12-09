@@ -1,0 +1,43 @@
+com/gb/base_1728_lesson_6/MyFragmentsActivity.java
+ com.gb.base_1728_lesson_6.MyFragmentsActivity
+ com.gb.base_1728_lesson_6.MyFragmentsActivity$1
+com/gb/base_1728_lesson_6/CoatOfArmsFragment.java
+ com.gb.base_1728_lesson_6.CoatOfArmsFragment
+ com.gb.base_1728_lesson_6.CoatOfArmsFragment$1
+ com.gb.base_1728_lesson_6.CoatOfArmsFragment$1$1
+com/gb/base_1728_lesson_4/SecondActivity.java
+ com.gb.base_1728_lesson_4.SecondActivity
+ com.gb.base_1728_lesson_4.SecondActivity$1
+com/gb/base_1728_lesson_4/MyApp.java
+ com.gb.base_1728_lesson_4.MyApp
+com/gb/base_1728_lesson_6/CitiesFragment.java
+ com.gb.base_1728_lesson_6.CitiesFragment
+ com.gb.base_1728_lesson_6.CitiesFragment$1
+com/gb/base_1728_lesson_4/MainActivity.java
+ com.gb.base_1728_lesson_4.MainActivity
+ com.gb.base_1728_lesson_4.MainActivity$1
+ com.gb.base_1728_lesson_4.MainActivity$2
+com/gb/base_1728_lesson_4/ChangeThemeActivity.java
+ com.gb.base_1728_lesson_4.ChangeThemeActivity
+com/gb/lesson9/MyBottomSheetDialogFragment.java
+ com.gb.lesson9.MyBottomSheetDialogFragment
+com/gb/base_1728_lesson_6/AboutFragment.java
+ com.gb.base_1728_lesson_6.AboutFragment
+com/gb/lesson9/OnDialogListener.java
+ com.gb.lesson9.OnDialogListener
+com/gb/lesson9/MyDialogFragment.java
+ com.gb.lesson9.MyDialogFragment
+com/gb/base_1728_lesson_4/BuildConfig.java
+ com.gb.base_1728_lesson_4.BuildConfig
+com/gb/base_1728_lesson_6/City.java
+ com.gb.base_1728_lesson_6.City
+ com.gb.base_1728_lesson_6.City$1
+com/gb/lesson9/MyDialogFragmentCustom.java
+ com.gb.lesson9.MyDialogFragmentCustom
+com/gb/base_1728_lesson_6/TestCustom.java
+ com.gb.base_1728_lesson_6.TestCustom
+com/gb/base_1728_lesson_4/InterceptActivity.java
+ com.gb.base_1728_lesson_4.InterceptActivity
+com/gb/lesson9/LessonNinthFragments.java
+ com.gb.lesson9.LessonNinthFragments
+ com.gb.lesson9.LessonNinthFragments$1
