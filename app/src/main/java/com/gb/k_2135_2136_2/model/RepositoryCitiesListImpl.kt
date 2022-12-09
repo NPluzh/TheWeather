@@ -5,7 +5,7 @@ import com.gb.k_2135_2136_2.domain.Weather
 import com.gb.k_2135_2136_2.domain.getRussianCities
 import com.gb.k_2135_2136_2.domain.getWorldCities
 
-class RepositoryLocalImpl : RepositoryMany,RepositoryOne {
+class RepositoryCitiesListImpl : RepositoryMany,RepositoryOne {
     override fun getListWeather(location: Location): List<Weather> {
         return when (location) {
             Location.Russian -> {
